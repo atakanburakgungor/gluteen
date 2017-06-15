@@ -1,0 +1,24 @@
+spring:
+
+  profiles:
+    active: prod
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  resources:
+    static-locations: "webapp/web/"
+
+  thymeleaf:
+    cache: false
+
+resources:
+  image-folder: images/avatars/
+  api-url: http://localhost:8080
+  web-url: http://localhost:8000
+remember-me:
+  token: SN_REMEMBER_TOKEN
+  cookie: SN_REMEMBER_ME_COOKIE
+
